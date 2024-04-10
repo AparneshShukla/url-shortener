@@ -32,11 +32,6 @@
         {% endif %}
 
 
-
-
-
-
-
         <h2>Your Shortened URLs</h2>
         {% if shortened_urls %}
             <ul>
@@ -50,18 +45,9 @@
             <p>No shortened URLs found.</p>
         {% endif %}
 
-
-
-
-
-
-
-
-
-
-
         
-        <p><a href="{{ url_for('logout') }}">Logout</a></p>
+        
+        <p><a href="{{ url_for('main.logout') }}">Logout</a></p>
 
         
     </body>
