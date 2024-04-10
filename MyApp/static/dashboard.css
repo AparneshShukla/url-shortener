@@ -25,12 +25,12 @@ table {
     margin-top: 20px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid grey;
+    background: #eee;
 }
 
 th, td {
     padding: 12px 25px;
     text-align: left;
-    border-bottom: 1px solid #333;
 }
 
 th {
@@ -41,12 +41,11 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #fcfcfc;
+    background-color: #ddd;
 }
 
 tr:hover {
-    background-color: #fefefe;
-    cursor: pointer;
+    background-color: #44444455;
 }
 
 
