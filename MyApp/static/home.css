@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #d1fffd;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
 }
 .container {
     margin: 50px 0 0 0;
