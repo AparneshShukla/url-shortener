@@ -16,7 +16,6 @@ h1 {
     padding: 10px;
     box-sizing : border-box;
     border-radius: 3px;
-    border: 2px solid grey;
 }
 
 table {
@@ -24,13 +23,13 @@ table {
     width: 100%;
     margin-top: 20px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    background-color: red;
+    border: 1px solid grey;
 }
 
 th, td {
     padding: 12px 25px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
 }
 
 th {
@@ -41,11 +40,11 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #aaa;
+    background-color: #fcfcfc;
 }
 
 tr:hover {
-    background-color: #ccc;
+    background-color: #fefefe;
     cursor: pointer;
 }
 
