@@ -12,7 +12,9 @@ h1 {
 .tablecontainer{
     width: 75%;
     margin: auto;
-    border-radius: 4px;
+    padding: 2%
+    box-sizing : border-box;
+    border-radius: 3px;
 }
 
 table {
@@ -25,25 +27,24 @@ table {
 }
 
 th, td {
-    padding: 12px 15px;
+    padding: 12px 25px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #00abff;
+    background-color: #444;
     color: #ffffff;
-    font-weight: normal;
     text-align: center;
     font-weight: bold;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #aaa;
 }
 
 tr:hover {
-    background-color: #ddd;
+    background-color: #ccc;
     cursor: pointer;
 }
 
