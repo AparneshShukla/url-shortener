@@ -9,13 +9,19 @@ h1 {
     margin : 0;
 }
 
+.table_container{
+    width: 75%;
+    margin: auto;
+    border-radius: 4px;
+}
+
 table {
     border-collapse: collapse;
-    width: 70%;
+    width: 100%;
     margin-top: 20px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    background-color: #aaaaaa55;
+    display:block;
+    background-color: #22222255;
 }
 
 th, td {
@@ -28,6 +34,8 @@ th {
     background-color: #00abff;
     color: #ffffff;
     font-weight: normal;
+    text-align: center;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
