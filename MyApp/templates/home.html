@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your URL Shortener Service</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <p id="sim">Simplify Your Links with Your URL Shortener Service</p>
+        <p id="que">Are your URLs too long to share comfortably?</p>
+        <p id="ans"> URL shortener makes it easy to shorten your links into simple, memorable URLs that are perfect for sharing on social media, email, or anywhere else.</p>
+
+        <form action="" method="post">
+            <input type="text" name="url" id="url" placeholder="Enter your URL here"><br>
+            <button type="submit" class="button">Create Short Link</button>
+        </form><br>
+
+        {% if shortened_url %}
+            <p>Your Shortened Link is 
+                <a href="{{ shortened_url }}" target= "_blank" id="tinyurl"> {{ shortened_url }}</a>
+            </p>
+        {% endif %}
+
+        <p>Create an account to maintain all your URLs.</p>
+         
+        <p>Please <a href="{{ url_for('login') }}" class="login">Log in</a>
+            or 
+            <a href="{{ url_for('register') }}" class="login">
+            create an account</a> 
+            to access our services.
+        </p>
+  
+    </div>
+</body>
+</html>

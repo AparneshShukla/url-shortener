@@ -1,0 +1,10 @@
+h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+#url {
+    width: 50%;
+    padding: 15px 20px;
+    margin : 0;
+}

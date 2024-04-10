@@ -1,0 +1,6 @@
+gunicorn
+Flask
+Flask-SQLAlchemy
+psycopg2-binary
+Werkzeug
+pyshorteners
