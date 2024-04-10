@@ -8,8 +8,8 @@ def create_app():
     app = Flask(__name__)
 
     app.secret_key = secrets.token_hex(16)
-    DATABASE_URI ='postgresql://mydbrender_user:password@dpg-coaqgjn109ks73dv5a5g-a/mydbrender'
-    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
+    DATABASE_URL = 'postgres://mydbrender_user:xOn60JTXokZtXCxZIdCjB7Tkx9ysl90G@dpg-coaqgjn109ks73dv5a5g-a/mydbrender'
+    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     db.init_app(app)
