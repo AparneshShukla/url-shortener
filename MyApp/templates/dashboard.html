@@ -31,23 +31,25 @@
     {% endif %}
 
     <h2>Your Shortened URLs</h2>
-    {% if shortened_urls %}
-        <table>
-            <thead>
-                <tr>
-                    <th>Original URL</th>
-                    <th>Shortened URL</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for short_url, original_url in shortened_urls.items() %}
+    {% if shortened_urls 
+       <div class = "tablecontainer">
+            <table>
+                <thead>
                     <tr>
-                        <td><a href="{{ original_url }}" target="_blank">{{ original_url }}</a></td>
-                        <td><a href="{{ short_url }}" target="_blank">{{ short_url }}</a></td>
+                        <th>Original URL</th>
+                        <th>Shortened URL</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    {% for short_url, original_url in shortened_urls.items() %}
+                        <tr>
+                            <td><a href="{{ original_url }}" target="_blank">{{ original_url }}</a></td>
+                            <td><a href="{{ short_url }}" target="_blank">{{ short_url }}</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+       </div>
     {% else %}
         <p>No shortened URLs found.</p>
     {% endif %}
